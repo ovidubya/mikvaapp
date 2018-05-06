@@ -32,10 +32,17 @@ function getHefekTahraMikvaDates(date, nusach) {
 } 
 
 function calculate() {
+
     if(toggleSwitch == 0) {
+        if(document.getElementById('datepicker').value == "" || document.getElementById('jewtype').value == "Select one") {
+            alert('Please fill out all forms');
+        }
         getHefekTahraMikvaDates(document.getElementById('datepicker').value, document.getElementById('jewtype').value);
     }
     else {
+        if(document.getElementById('datepicker2').value == "" || document.getElementById('jewtype').value == "Select one") {
+            alert('Please fill out all forms');
+        }
         getHefekTahraMikvaDates(document.getElementById('datepicker2').value, document.getElementById('jewtype2').value);
     }
 }
