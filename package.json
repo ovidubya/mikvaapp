@@ -1,0 +1,11 @@
+{
+  "name": "mikvaapp",
+  "version": "1.0.0",
+  "description": "Calculates when your hefesk tahara is or mikva night",
+  "main": "demo.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
