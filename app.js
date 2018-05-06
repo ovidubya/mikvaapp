@@ -7,6 +7,7 @@ app.get('/',  function(req, res) {
     res.sendFile(path.join(__dirname + '/demo.html'));
 });
 
-app.listen(3000, function() {
-    console.log('Example app listening on port 3000!');
+app.set('port', (process.env.PORT || 5000));
+app.listen(app.get('port'), function() {
+    console.log('Example app listening on port ' + app.get('port') );
 });
