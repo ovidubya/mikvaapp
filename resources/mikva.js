@@ -40,7 +40,7 @@ function calculate() {
         getHefekTahraMikvaDates(document.getElementById('datepicker').value, document.getElementById('jewtype').value);
     }
     else {
-        if(document.getElementById('datepicker2').value == "" || document.getElementById('jewtype').value == "Select one") {
+        if(document.getElementById('datepicker2').value == "" || document.getElementById('jewtype2').value == "Select one") {
             alert('Please fill out all forms');
         }
         getHefekTahraMikvaDates(document.getElementById('datepicker2').value, document.getElementById('jewtype2').value);
